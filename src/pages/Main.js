@@ -40,7 +40,7 @@ export default function Main() {
 
     return (
         <>
-            <div className="bg-[url('https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg')] bg-cover brightness-100 min-h-screen min-w-screen static">
+            <div className="bg-bg_music bg-cover brightness-100 min-h-screen min-w-screen static">
                 <h1 className= 'text-[80px] lg:text-[250px] font-bebasNeue font-bold tracking-wider text-gray-100 uppercase text-center'> Youtube to MP3 Downloader</h1>
                 <h1 className= 'absolute -z-10 lg:inset-y3 md: inset-y-1 text-[80px] lg:text-[260px] font-bebasNeue font-bold tracking-wider text-black uppercase text-center'> Youtube to MP3 Downloader</h1>
                 <Search onSubmit={onSubmit}/>

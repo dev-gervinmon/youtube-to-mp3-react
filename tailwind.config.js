@@ -8,6 +8,9 @@ module.exports = {
         fontFamily: {
           nerkoOne: ['Nerko One', 'sans-serif'],
           bebasNeue: ['Bebas Neue', 'sans-serif']
+        },
+        backgroundImage: {
+          bg_music: "url('/src/imgs/bg-music.jpeg')"
         }
     },
   },
