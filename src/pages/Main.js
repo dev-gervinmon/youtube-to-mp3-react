@@ -1,6 +1,7 @@
 import Search from '../components/Search';
 import Card from '../components/Card';
 import { useState } from 'react';
+import LoadingScreen from '../components/LoadingScreen';
 
 export default function Main() {
     const [downloadLink, setDownloadLink] = useState('');
@@ -50,7 +51,7 @@ export default function Main() {
                 <div className='lg:mx-2 mx-3 flex justify-center'><Card title={songTitle} link={downloadLink}/></div>
                 
                 : null}
-                        {error ? <Card title='Something went wrong...' link='http://localhost:3000'/> : null}
+                {error ? <Card title='Something went wrong...' link='http://localhost:3000'/> : null}
             </div>
         </>
     )

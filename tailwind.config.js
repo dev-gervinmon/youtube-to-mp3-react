@@ -10,7 +10,7 @@ module.exports = {
           bebasNeue: ['Bebas Neue', 'sans-serif']
         },
         backgroundImage: {
-          bg_music: "url('/src/imgs/bg-music.jpeg')"
+          bg_music: "url('/src/imgs/bg-music.webp')"
         }
     },
   },
