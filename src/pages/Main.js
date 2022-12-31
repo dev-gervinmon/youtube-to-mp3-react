@@ -1,7 +1,6 @@
 import Search from '../components/Search';
 import Card from '../components/Card';
 import { useState } from 'react';
-import LoadingScreen from '../components/LoadingScreen';
 
 export default function Main() {
     const [downloadLink, setDownloadLink] = useState('');
@@ -15,7 +14,6 @@ export default function Main() {
             video = video.replace('https://youtu.be/', "");
         }
         else video = video.replace('https://www.youtube.com/watch?v=', "");
-        setShow(true);
         fetch('https://youtube-mp3-download1.p.rapidapi.com/dl?id=' + video, { 
             "method": 'GET',
             "headers": {
@@ -31,6 +29,7 @@ export default function Main() {
             if (data.status === 'fail' || data.msg === 'Invalid Video Id') {
                 setError(true);
             }
+            setShow(true);
             setDownloadLink(data.link);
             setSongTitle(data.title);
         })
