@@ -1,3 +1,4 @@
+import { Card } from 'react-bootstrap';
 import Search from '../components/Search';
 import { useState } from 'react';
 
